@@ -33,10 +33,6 @@ public class Main {
                     .filter(person -> person.getAge() > 18)
                     .filter(person -> person.getAge() < 60)
                     .filter(person -> person.getEducation() == Education.HIGHER)
-                    .sorted(Comparator.comparing(Person::getFamily))
-                    .forEach(System.out::println);
-
-            persons.stream()
                     .filter(person -> person.getSex() == Sex.MAN)
                     .filter(person -> person.getAge() > 18)
                     .filter(person -> person.getAge() < 65)
